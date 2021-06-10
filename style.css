@@ -34,6 +34,12 @@ h2{
     justify-content: space-between;
 }
 
+#title {
+    /* font-size: x-large; */
+    display:flex;
+    flex-wrap: wrap;
+}
+
 #loadButton {
     display: flex;
     justify-content: center;
