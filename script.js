@@ -20,7 +20,7 @@ function displayResults(responseArr) {
     responseArr.forEach(function(movie) {  
     movieResults.innerHTML += `
         <div class = "movie">
-            <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" width="300px" height="400px"></img>
+                <img id="image" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" width="300px" height="400px"></img>
             <div class = "rating">
                 <p>&#127775;</p>
                 <span id="rating">${movie.vote_average}</span>
@@ -47,13 +47,49 @@ async function currentMovies() {
     response = await fetch(apiURL);
     responseData = await response.json();
     responseArr = responseData.results;
-    console.log(responseArr)
-    displayResults(responseArr);
+    displayResults(responseArr); // returns holder 
 }
 
 currentMovies()
-// searchedMovies()
+
+
+let modalBtn = document.getElementById("modal-btn")
+let modal = document.querySelector(".modal")
+let closeBtn = document.querySelector(".close-btn")
+
+
+// movieResults.addEventListener('click', function (event) {
+
+//     if (event.target.matches('#modal-btn')) {
+//         // Run your code to open a modal
+//         console.log('clicekd')
+//         // modal.style.display = "block"
+//     }
+
+//     if (event.target.matches('.close')) {
+//         // Run your code to close a modal
+//     }
+
+// }, false);
+    
+
+
+modalBtn.onclick = function () {
+    modal.style.display = "block"
+}
+
+closeBtn.onclick = function() {
+    modal.style.display = "none"
+}
+
+window.onclick = function(e) {
+    if (e.target == modal) {
+        modal.style.display = "none"
+    }
+}
 
 
 // responseArr.forEach(function(movie)
+// ${movie.overview}
+// ${movie.release_date} = release date
 // ${movie.overview} = text description
