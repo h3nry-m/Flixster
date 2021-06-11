@@ -54,8 +54,8 @@ h2{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0)
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgb(0,0,0);
+    background-color: rgba(255,255,255,0.5)
 }
 
 .modal-content {
@@ -77,29 +77,3 @@ h2{
     color: darkgray;
 }
 
-
-/* 
-.extrainfo {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.25);
-}
-
-.extra_content {
-    background-color: white;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    width: 40%;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-
-.close {
-    color: black;
-    float:right;
-} */
