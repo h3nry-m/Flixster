@@ -1,5 +1,3 @@
-📝 `NOTE` Use this template to initialize the contents of a README.md file for your application. As you work on your assignment over the course of the week, update the required or stretch features lists to indicate which features you have completed by changing `[ ]` to `[x]`. (🚫 Remove this paragraph before submitting your assignment.)
-
 ## Week 1 Assignment: Flixster
 
 Submitted by: **Henry Mu**
@@ -28,9 +26,8 @@ Estimated time spent: **30** hours spent in total
 
 ### Walkthough GIF
 
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d" width=250><br>
+<!-- <img src="https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d" width=250><br> -->
+![testing](https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d)
 
 ### Reflection
 
