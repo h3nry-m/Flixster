@@ -1,9 +1,8 @@
 
 // Global constants
 const api_key = "d8e8e9a8ed16ae9fd3ea37274ab553aa";
-// const youtubeapi_key = "AIzaSyDIWD3SBPEdLzi7kXWAyc1i5HoB8Ni28G0";
 const movieResults = document.querySelector(".movies");
-const temporary = document.querySelector(".temp");
+// const temporary = document.querySelector(".temp");
 const searchForm = document.querySelector("#search");
 const load = document.querySelector("#load");
 let page = 1
@@ -64,7 +63,6 @@ async function displayModal (movieID) {
 }
 
 
-
 function displayResults(responseArr) {
     responseArr.forEach(function(movie) {  
     movieResults.innerHTML += `
@@ -77,10 +75,6 @@ function displayResults(responseArr) {
             <span id="title">${movie.original_title}</span>
         </div>` 
     })}
-
-
-
-// displayMovieInfo()
 
 async function searchMovies(event) {
     event.preventDefault();
@@ -105,43 +99,3 @@ async function currentMovies() {
 }
 
 onload = currentMovies()
-
-
-
-// modalBtn.onclick = function () {
-//     modal.style.display = "block"
-// }
-
-// closeBtn.onclick = function() {
-//     modal.style.display = "none"
-// }
-
-// window.onclick = function(e) {
-//     if (e.target == modal) {
-//         modal.style.display = "none"
-//     }
-// }
-
-
-// responseArr.forEach(function(movie)
-// ${movie.overview}
-// ${movie.release_date} = release date
-// ${movie.overview} = text description
-
-
-// attach the click to the image poster 
-// make a separate call to get the movie info API 
-// 
-
-// temporary.addEventListener('click', function (event) {
-
-//     if (event.target.matches("#modal-btn")) {
-//         console.log('clicked')
-//         modal.style.display = "block"
-//     }
-
-//     if (event.target.matches(".close-btn")) {
-//         modal.style.display = "none"
-//     }
-
-// }, false);
