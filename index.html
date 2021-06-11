@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Flixster</h1>
-    <h2>Now Playing</h2>
-    <form>
-        <label>Search: </label>
+    <div id="title">
+        <!-- <p>&#127871;</p> -->
+        <h1>Flixster</h1>
+    </div>
+    <form id="nowPlaying">
+        <button id="nowPlaying">Now Playing</button>
+    </form>
+    <form id="search">
+        <!-- <label>Search:</label> -->
         <input type="text" name="search">
+        <button>Search</button>
     </form>
 
     <div class = "movies"></div>
@@ -27,9 +33,6 @@
     <div id="loadButton">
         <button id="load">Load More Current Movies</button>
     </div>
-
-
-
 
 
     <script src="script.js"></script>

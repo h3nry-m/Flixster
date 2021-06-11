@@ -4,7 +4,7 @@ const api_key = "d8e8e9a8ed16ae9fd3ea37274ab553aa";
 // const youtubeapi_key = "AIzaSyDIWD3SBPEdLzi7kXWAyc1i5HoB8Ni28G0";
 const movieResults = document.querySelector(".movies");
 const temporary = document.querySelector(".temp");
-const searchForm = document.querySelector("form");
+const searchForm = document.querySelector("#search");
 const load = document.querySelector("#load");
 let page = 1
 
@@ -13,20 +13,16 @@ const modal = document.querySelector(".modal")
 const closeBtn = document.querySelector(".close-btn")
 const modalText = document.querySelector(".modal-text")
 
-
+const now = document.querySelector("#nowPlaying")
 
 async function testYoutube(movieID) {
-    console.log("i'm here")
     let videoURL = "https://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=" + api_key + "&language=en-US";
     response = await fetch(videoURL);
     responseData = await response.json();
     videoID = responseData.results[0].key;
     youtubelink = "https://www.youtube.com/embed/" + videoID
-    // console.log(youtubelink)
     return youtubelink
 }
-
-// testYoutube()
 
 closeBtn.addEventListener('click', exitModal)
 searchForm.addEventListener("submit", searchMovies)
@@ -51,19 +47,20 @@ async function displayModal (movieID) {
     let description = responseData.overview;
     let releaseDate = responseData.release_date;
     let runtime = responseData.runtime;
+    let title = responseData.original_title
 
 
     let youtubelink = await testYoutube(movieID);
-    console.log(youtubelink);
     modalText.innerHTML = `
+    <h1>${title}</h1>
     <p>Description: ${description}</p>
-    <p>Release Date: ${releaseDate}</p>
-    <p>Runtime: ${runtime} minutes</p>
-    <iframe width="420" height="315"
-    src="${youtubelink}">
-    </iframe> 
+    <div id=makeRow>
+        <p>${releaseDate} | ${runtime} minutes</p>
+    </div>
+    <iframe width="560" height="315" src="${youtubelink}" 
+    frameborder="0" allow="autoplay; encrypted-media" 
+    allowfullscreen></iframe>
     `
-
 }
 
 
@@ -87,6 +84,7 @@ function displayResults(responseArr) {
 
 async function searchMovies(event) {
     event.preventDefault();
+    console.log('im in search movies')
     movieResults.innerHTML = ` `
     let userInput = event.target.search.value;
     let apiURL = "https://api.themoviedb.org/3/search/movie?api_key=" + api_key + "&query=" + userInput;
@@ -106,7 +104,7 @@ async function currentMovies() {
     displayResults(responseArr); // returns holder 
 }
 
-currentMovies()
+onload = currentMovies()
 
 
 
