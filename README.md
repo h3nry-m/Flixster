@@ -26,8 +26,11 @@ Estimated time spent: **30** hours spent in total
 
 ### Walkthough GIF
 
-<!-- <img src="https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d" width=250><br> -->
-![testing](https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d)
+<img src="<a href="https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d">
+    <p>Flixster - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ac0ff86224a84a8b8fc500e9fcbccd1d-with-play.gif">
+  </a>" width=250><br>
+<!-- ![Link for audio demo](https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d) -->
 
 ### Reflection
 
