@@ -2,7 +2,7 @@
 
 Submitted by: **Henry Mu**
 
-Estimated time spent: **30** hours spent in total
+Estimated time spent: **20** hours spent in total
 
 
 ### Application Features
