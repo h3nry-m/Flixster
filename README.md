@@ -25,7 +25,8 @@ Estimated time spent: **30** hours spent in total
 - [ ] Implement anything else that you can get done to improve the app functionality!
 
 ### Walkthough GIF   
-<img src="https://cdn.loom.com/sessions/thumbnails/ac0ff86224a84a8b8fc500e9fcbccd1d-with-play.gif" width=250><br>
+<img src="https://cdn.loom.com/sessions/thumbnails/ac0ff86224a84a8b8fc500e9fcbccd1d-with-play.gif">
+[Link to full audio walkthrough here](https://www.loom.com/share/ac0ff86224a84a8b8fc500e9fcbccd1d)
 
 ### Reflection
 
