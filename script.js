@@ -2,7 +2,6 @@
 // Global constants
 const api_key = "d8e8e9a8ed16ae9fd3ea37274ab553aa";
 const movieResults = document.querySelector(".movies");
-// const temporary = document.querySelector(".temp");
 const searchForm = document.querySelector("#search");
 const load = document.querySelector("#load");
 let page = 1
