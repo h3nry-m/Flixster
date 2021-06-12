@@ -93,7 +93,6 @@ h2{
 
 #makeRow {
     display:flex;
-    /* justify-content: center; */
 }
 
 #title {
@@ -115,7 +114,6 @@ h2{
 
 form input[type=text] {
     width: 250px;
-    /* border-radius: 20px; */
 }
 
 button {
